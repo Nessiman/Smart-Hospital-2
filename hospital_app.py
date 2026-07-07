@@ -168,23 +168,23 @@ if predict_button:
     "chief_complaint" : cc_map[chief_complaint]
   }])
 
-patient_scaled = patient.copy()
+  patient_scaled = patient.copy()
 
-patient_scaled[cols_to_scale] = scaler.transform(
-  patient[cols_to_scale]
-)
+  patient_scaled[cols_to_scale] = scaler.transform(
+    patient[cols_to_scale]
+  )
 
-prediction = model.predict(
-  patient_scaled[features]
-)[0]
+  prediction = model.predict(
+    patient_scaled[features]
+  )[0]
 
-probability = model.predict_proba(
-  patient_scaled[features]
-)[0]
+  probability = model.predict_proba(
+    patient_scaled[features]
+  )[0]
 
-department = dept_map_inv[prediction]
+  department = dept_map_inv[prediction]
 
-confidence = probability[prediction] * 100
+  confidence = probability[prediction] * 100
 
 # tampilkan hasil
 st.divider()
