@@ -187,27 +187,27 @@ if predict_button:
   confidence = probability[prediction] * 100
 
 # tampilkan hasil
-st.divider()
-st.header("Prediction Result")
-info = DEPT_INFO.get(department)
+  st.divider()
+  st.header("Prediction Result")
+  info = DEPT_INFO.get(department)
 
-if info:
+  if info:
 
-  st.success(
-    f"{info['icon']} : recommended Department : {Department}"
-  )
-  st.write(f"**Confidence** {confidence: }%")
-  st.write("Description: ")
-  st.write(info["desc"])
-  st.write("What should the patient do ?")
+    st.success(
+      f"{info['icon']} : recommended Department : {Department}"
+    )
+    st.write(f"**Confidence** {confidence: }%")
+    st.write("Description: ")
+    st.write(info["desc"])
+    st.write("What should the patient do ?")
 
-  for step in info["next"]:
-    st.write(f"{step}")
-else:
-  st.success(f"Recomended Department: {department}")
-  st.write(f"Confidence : {confidence}")
+    for step in info["next"]:
+      st.write(f"{step}")
+  else:
+    st.success(f"Recomended Department: {department}")
+    st.write(f"Confidence : {confidence}")
 
-st.warning("This AI Recomendation is only for educational purposes")
+  st.warning("This AI Recomendation is only for educational purposes")
 
 
 
