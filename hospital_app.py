@@ -24,7 +24,7 @@ dur_map = bundle["dur_map"]
 cc_map = bundle["cc_map"]
 
 DEPT_INFO = {
-  "Respiratory Medicine": {
+  "respiratory medicine": {
     "icon" : "🫁",
     "desc" : "Specialises in condition affexting the lungs and airways",
     "next" : [
