@@ -194,7 +194,7 @@ if predict_button:
   if info:
 
     st.success(
-      f"{info['icon']} : recommended Department : {Department}"
+      f"{info['icon']} : recommended Department : {department}"
     )
     st.write(f"**Confidence** {confidence: }%")
     st.write("Description: ")
