@@ -32,7 +32,7 @@ DEPT_INFO = {
       "Estimated wait: 15-25 minutes",
       "Please wear mask"
     ]
-  }
+  },
   "Cardiology": {
     "icon" : "💗",
     "desc" : "Specialises in heart and cardiovascular conditions",
@@ -41,7 +41,7 @@ DEPT_INFO = {
       "Estimated wait: 20-30 minutes",
       "Please bring previous ECG reports"
     ]
-  }
+  },
   "Gastroenterology": {
     "icon" : "🫄",
     "desc" : "Specialises in digestive system condition",
@@ -49,7 +49,7 @@ DEPT_INFO = {
       "visit level 1, Wing C",
       "Estimated wait: 20-30 minutes",
     ]
-  }
+  },
 "Neurology": {
     "icon" : "🧠",
     "desc" : "Specialises in brain and nervous system condition",
@@ -58,14 +58,14 @@ DEPT_INFO = {
       "Estimated wait: 30 - 60 minutes",
       "Bring current medicatoin list"
     ]
-  }
+  },
 "General Medicine": {
     "icon" : "🩺",
     "desc" : "Genereal Health Consultation",
     "next" : [
       "Visit level 1, Wing A"
     ]
-  }
+  },
 
 "Dermatology": {
     "icon" : "🧏🏼‍♀️",
