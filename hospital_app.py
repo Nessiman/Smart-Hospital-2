@@ -24,7 +24,7 @@ dur_map = bundle["dur_map"]
 cc_map = bundle["cc_map"]
 
 DEPT_INFO = {
-  "respiratory medicine": {
+  "Respiratory Medicine": {
     "icon" : "🫁",
     "desc" : "Specialises in condition affexting the lungs and airways",
     "next" : [
@@ -189,6 +189,7 @@ if predict_button:
 # tampilkan hasil
   st.divider()
   st.header("Prediction Result")
+  
   info = DEPT_INFO.get(department)
 
   if info:
